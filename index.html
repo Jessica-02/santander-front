@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.css">
     <title>Document</title>
 </head>
+
 <body>
 
-    <header class="header">
+    <header class="header fixed-header">
         <a href="./index.html" class="Logo">
             <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="Matcha Logo">
         </a>
@@ -26,45 +32,89 @@
         </nav>
 
         <div class="actions">
-            <a href="/login">Sign In</a><br>
+            <a href="/login">Sign In</a>
             <button>Start free trial</button>
         </div>
     </header>
-    <h1>Mi primer etiqueta</h1>
-    <h2>Encabezado 2</h2>
-    <h3>Encabezado 3</h3>
-    <h4>Encabezado 4</h4>
-    <h5>Encabezado 5</h5>
-    <h6>Encabezado 6</h6>
-    <p><b>Lorem</b> ipsum dolor sit amet consectetur 
-        adipisicing elit. Iste nostrum animi 
-        dicta sed illo et consectetur eaque 
-        tempora error, natus dolores iure officia 
-        amet ullam. Voluptatibus fuga recusandae ratione ullam?
-    </p>
+
+    <main>
+    </main>
+        <section class="promo">
+            <!-- Agregamos multiples formatos de video para que tenga mayor compatibilidad
+        con dispositivos viejos, eso se hace con source, por cada formato
+        agregamos un source -->
+            <article class="imgvideo">
+                <video class="video" controls
+                    poster="https://cdn.videvo.net/videvo_files/video/premium/video0036/thumbnails/computer_code00_small.jpg">
+
+                    <source type="video/webm"
+                        src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.webm" />
+                    <source type="video/mp4"
+                        src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4" />
+                </video>
+
+                <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/see_how_it_works.png"
+                    alt="See how it works" />
+            </article>
+
+
+            <article class="publish">
+                <h3>Publish to your blog in minutes, not hours.</h3>
+                <p>Your blog is your most powerful asset to build, engage, and retain a loyal
+                    audience. But you don’t have hours to create content that may or may not
+                    work. With Matcha, instantly publish from our library of 10,000+
+                    professionally written articles and build your email list faster with our
+                    powerful conversion tool.
+                </p>
+                <div class="form-container">
+                    <p>Start publishing today:</p>
+                    <form class="form">
+                        <input type="text" placeholder="Enter email" />
+                        <button>Start My Trial</button>
+                    </form>
+                </div>
+                
+            </article>
+        </section>
+
+        <h1>Mi primer etiqueta</h1>
+        <h2>Encabezado 2</h2>
+        <h3>Encabezado 3</h3>
+        <h4>Encabezado 4</h4>
+        <h5>Encabezado 5</h5>
+        <h6>Encabezado 6</h6>
+        <p><b>Lorem</b> ipsum dolor sit amet consectetur
+            adipisicing elit. Iste nostrum animi
+            dicta sed illo et consectetur eaque
+            tempora error, natus dolores iure officia
+            amet ullam. Voluptatibus fuga recusandae ratione ullam?
+        </p>
+
+        <!-- <input type="text"><br> -->
+        <form action="">
+
+            <label for="name">Nombre:</label>
+            <input id="name" type="text"><br>
+
+            <label for="ap">Apellido:</label>
+            <input id="ap" type="text"><br>
+
+            <label for="age">Edad:</label>
+            <input id="age" type="number"><br>
+
+            <label for="email">Correo:</label>
+            <input id="email" type="email"><br>
+
+            <label for="pass">Contraseña:</label>
+            <input id="pass" type="password"><br>
+
+            <button type="sibmit">Enviar &rarr;</button>
+        </form>
+
+        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" alt="Imagen capterra" />
+
     
-    <!-- <input type="text"><br> -->
-    <form action="">
-        
-        <label for="name">Nombre:</label>
-        <input id="name" type="text"><br>
 
-        <label for="ap">Apellido:</label>
-        <input id="ap" type="text"><br>
-
-        <label for="age">Edad:</label>
-        <input id="age" type="number"><br>
-
-        <label for="email">Correo:</label>
-        <input id="email" type="email"><br> 
-
-       <label for="pass">Contraseña:</label>
-       <input id="pass" type="password"><br>
-        
-       <button type="sibmit">Enviar &rarr;</button>
-    </form>
-    
-    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" alt="Imagen capterra"/>
-    
 </body>
+
 </html>

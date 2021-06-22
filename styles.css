@@ -1,16 +1,72 @@
+/* ================ Global =========================*/
+body {
+    background-color: #fff;
+    font-family: sans-serif;
+}
+h1,h2,h3,h4{
+    font-family: 'Alegreya', serif;
+    color: #025157;
+    margin: 0;
+}
+/* ====================Header =======================*/
 .header{
-    margin: 40px 20px 0 20px;
+    /* margin: 40px 20px 0 20px; */
     /* margin-top: 40px;
     margin-left: 20px;
     margin-right: 20px; */
-    font-size: 0;
-    line-height: 45px;
+    /* line-height: 45px; */
+    width: 100%;
+    padding: 8px 16px;
     font-family: sans-serif;
 }
-body {
-    background-image: url('https://pro2-bar-s3-cdn-cf.myportfolio.com/67cf45ca-338d-4fd0-943b-32d96162976a/b7b52d14-b827-4c3a-906f-3b94fa13f35f_rw_1920.png');
+.fixed-header{
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+}
+/*Aplica a Todos los hijos que 
+tenga header los estilos*/
+.header > *{ 
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    height: 100%;
+    /* line-height: 45px; */
+}
+.header a{
+    width: 14%;
+}
+.navbar{
+    width: 70%;
+    text-align: center;
+    color: #025157;
+}
+.actions{
+    width: 15%;
+    margin: 0;
+    text-align: right;
+    font-size: 14px;
+}
+.actions button{
+    color: white;
+    background-color: #67b54b;
+    padding: 16px 14px;
+    border: 0;
+    border-radius: 5px;
+}
+.actions a{
+    color: #67b54b;
+    text-decoration: none;
+}
+li{
+    display: inline;
+    cursor: pointer;
+}
+.menu-item li{
+    padding: 8px;
 }
 
+/* ==================  Ejemplos ================= */
 h1 {
     color: #46484c;
     text-align: center;
@@ -21,57 +77,74 @@ h2{
 p {
     color: #8b8b8bcc;
     font-family: verdana;
-    font-size: 20px;
 }
   
 b{
     color: #8b8b8bcc;
 }
 button {
-    padding: 7px;
+    /* padding: 12px 14px; */
     border: none;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     color: #fff;
     background-color: #025157;
 }
-li{
-    display: inline;
+/* =======================Main===================== */
+main{
+    padding-top: 285px;
 }
-/*Aplica a Todos los hijos que tenga header los estilos*/
-.header > *{ 
-    display: inline-block;
-    font-size: 16px;
-    vertical-align: middle;
+/* ========================Publisher================= */
+.promo{
+    max-width: 70%;
+    display: flex;
+    margin: 100px auto;
+    align-items: center;
+}
+.imgvideo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgvideo img{
+    width: 150px;
+    margin-top: 10px;
+}
+.publish h3{
+    font-size: 40px;
+}
+.publish p{
+    color: #343434;
+}
+.form-container p{
+    color: #025157;
+    font-weight: bold;
+}
+.publish{
+    padding-left: 20px;
+}
+.form{
+    display: flex;
+    align-items: center;
+}
+.form input{
+    width: 60%;
+    font-size: 13;
+    padding: 14px 20px;
+    max-width: 250px;
+    border-radius: 5px;
+    border: 1px solid gray;
+
+}
+.form button{
     height: 100%;
-    line-height: 45px;
+    font-size: 16px;
+    padding: 15px 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: -15px;
 }
-.logo{
-    width: 15%;
-}
-.navbar{
-    width: 70%;
-    text-align: center;
+
+.form p{
     color: #025157;
 }
-.menu-item li{
-    margin-right: 25px;
-    margin-left: 25px;
-}
-.actions{
-    width: 15%;
-    text-align: right;
-    font-size: 14px;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-.actions a{
-    color: #67b54b;
-    text-decoration: none;
-}
-.actions button{
-    color: white;
-    background-color: #67b54b;
-    padding: 12px 14px;
-    border: 0;
-    border-radius: 5px;
-}
+
