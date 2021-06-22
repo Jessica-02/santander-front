@@ -12,7 +12,10 @@
  *,*:before, *::after{
      box-sizing:border-box; /*al usar el box sizing border box lo que hace es calcular cuando nosotros añadimos un elemento de 20px x 20px y un padding de 5px, hace que el ememento siga midiendo 20px x 20px  y no 25x25 con el padding añadido, al añadir pading y margenes nos deja el tamaño original y se adapta al paddin o margenes que agreguemos*/
  }
-
+*{
+  margin: 0;
+  padding: 0;
+}
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
