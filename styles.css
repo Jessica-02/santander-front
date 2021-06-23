@@ -3,10 +3,16 @@ body {
     background-color: #fffbf7;
     font-family: "Open Sans", sans-serif;
 }
-h1,h2,h3,h4{
+h1,h2,h3{
     font-family: 'Alegreya', serif;
     color: #025157;
     margin: 0;
+    font-weight: 900;
+    line-height: 55px;
+}
+.texto{
+    color: #343434;
+    line-height: 1.5;
 }
 /* ====================Header =======================*/
 .header{
@@ -78,13 +84,11 @@ main{
 }
 .publish h3{
     font-size: 40px;
-    line-height: 50px;
 }
 .publish p{
     color: #343434;
     margin-top: 20px;
     margin-bottom: 20px;
-    line-height: 1.5;
 }
 .form-container p{
     color: #025157;
@@ -119,5 +123,112 @@ main{
 
 .form p{
     color: #025157;
+}
+/* ================== Customers section ================= */
+.customers{
+    background-color: #a1d683;
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;  
+}
+.ads{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    padding-right: 100px;
+}
+.ads h2{
+    font-size: 50px;
+}
+.ads p{
+    font-size: 18px;
+    margin: 15px 0;
+}
+.btn{
+  background-color: #025157;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  height: 45px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-ads{
+    width: 60%;
+    padding: 12px 6px;
+    width: 30%;
+}
+.brands-img{
+    margin-top: 32px;
+}
+.brands-img img{
+    width: 500px;
+    max-width: 100%;
+}
+.customers-carrusel{
+    flex: 1;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.customer{
+    position: relative;
+}
+.customer img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.customer-logo{
+    position: absolute;
+    bottom: -30px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #f9da73;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.customer-logo img{
+    max-width: 75%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+.card h3{
+    color: #212529e1;
+    font-family: "Open Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;  
+}
+.card h4{
+    font-family: 'Slabo 27px', serif;
+    color: #025157;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+.extra-income{
+    display: flex;
+    align-items: center;
+    color: #8b8b8bcc;
+    padding-bottom: 25px;
+}
+.extra-income img{
+    width: 26px;
+    margin: 0px 20px;
+}
+.btn-container{
+    margin-bottom: 17px;
+    padding: 25px;
+}
+.btn-card{
+    width: 100%;
 }
 
