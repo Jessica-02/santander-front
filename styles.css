@@ -3,19 +3,38 @@ body {
     background-color: #fffbf7;
     font-family: "Open Sans", sans-serif;
 }
-h1,h2,h3{
+
+h1,
+h2,
+h3 {
     font-family: 'Alegreya', serif;
     color: #025157;
     margin: 0;
     font-weight: 900;
     line-height: 55px;
 }
-.texto{
+
+.texto {
     color: #343434;
     line-height: 1.5;
 }
+
+.btn {
+    background-color: #025157;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    height: 45px;
+    font-weight: 600;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+
 /* ====================Header =======================*/
-.header{
+.header {
     position: fixed;
     width: 100%;
     padding: 8px 16px;
@@ -23,27 +42,33 @@ h1,h2,h3{
     z-index: 1000;
     top: 0;
 }
-.header > *{ /*Aplica a Todos los hijos que tenga header los estilos*/
+
+.header>* {
+    /*Aplica a Todos los hijos que tenga header los estilos*/
     display: inline-block;
     font-size: 16px;
     vertical-align: middle;
     height: 100%;
 }
-.header a{
+
+.header a {
     width: 14%;
 }
-.navbar{
+
+.navbar {
     width: 70%;
     text-align: center;
     color: #025157;
 }
-.actions{
+
+.actions {
     width: 15%;
     margin: 0;
     text-align: right;
     font-size: 14px;
 }
-.actions button{
+
+.actions button {
     color: white;
     background-color: #67b54b;
     padding: 16px 14px;
@@ -51,57 +76,67 @@ h1,h2,h3{
     border-radius: 5px;
     cursor: pointer;
 }
-.actions a{
+
+.actions a {
     color: #67b54b;
-    text-decoration: none;
     font-weight: 700;
 }
-li{
+
+li {
     display: inline;
     cursor: pointer;
     padding: 8px;
 }
 
 /* =======================Main===================== */
-main{
+main {
     padding-top: 285px;
 }
+
 /* ========================Publisher================= */
-.promo{
+.promo {
     max-width: 70%;
     display: flex;
     margin: 100px auto;
     align-items: center;
 }
-.imgvideo{
+
+.imgvideo {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.imgvideo img{
+
+.imgvideo img {
     width: 150px;
     margin-top: 10px;
 }
-.publish h3{
+
+.publish h3 {
     font-size: 40px;
 }
-.publish p{
+
+.publish p {
     color: #343434;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.form-container p{
+
+.form-container p {
     color: #025157;
     font-weight: bold;
 }
-.publish{
+
+.publish {
     padding-left: 20px;
 }
-.form{
+
+.form {
     display: flex;
     align-items: center;
 }
-.form input{
+
+.form input {
     width: 60%;
     height: 55px;
     padding: 14px 20px;
@@ -109,8 +144,9 @@ main{
     border-radius: 7px;
     border: 1px solid #a1a1a1;
 }
-.form button{
-    height:55px;
+
+.form button {
+    height: 55px;
     border: none;
     color: white;
     background-color: #025157;
@@ -121,65 +157,136 @@ main{
     cursor: pointer;
 }
 
-.form p{
+.form p {
     color: #025157;
 }
+
+/*=========================== Features =========================*/
+.feature {
+    background-color: #025157;
+    display: grid;
+    grid-template: repeat(2, 330px) / repeat(2, 1fr);
+    padding: 5% 10%;
+}
+
+.card-feature {
+    display: flex;
+    background-color: white;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.card-content>* {
+    margin-bottom: 16px;
+}
+
+.card-content {
+    flex: 2;
+    padding-left: 20px;
+    padding: 30px 20px 40px 40px;
+}
+
+.icon-content {
+    margin-bottom: 16px;
+}
+
+.icon-content img {
+    width: 50px;
+}
+
+.card-content h3 {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.2;
+    font-size: 24px;
+    color: #343434;
+    font-weight: 400;
+}
+
+.card-content p {
+    color: #7e7e7e;
+    font-weight: 400;
+    ;
+}
+
+.card-content a {
+    color: #67b54b;
+    font-weight: 600;
+}
+
+.site-content {
+    flex: 1;
+    width: 40%;
+    position: relative;
+    right: -50px;
+    height: 80%;
+}
+
+.img-content,
+.img-content img {
+    height: 100%;
+}
+
 /* ================== Customers section ================= */
-.customers{
+.customers {
     background-color: #a1d683;
     padding: 5% 15%;
     display: flex;
-    align-items: center;  
+    align-items: center;
 }
-.ads{
+
+.ads {
     display: flex;
     flex-direction: column;
     flex: 2;
     padding-right: 100px;
 }
-.ads h2{
+
+.ads h2 {
     font-size: 50px;
 }
-.ads p{
+
+.ads p {
     font-size: 18px;
     margin: 15px 0;
 }
-.btn{
-  background-color: #025157;
-  color: #fff;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  height: 45px;
-  font-weight: 600;
-  cursor: pointer;
-}
-.btn-ads{
+
+.btn-ads {
     width: 60%;
     padding: 12px 6px;
     width: 30%;
 }
-.brands-img{
+
+.brands-img {
     margin-top: 32px;
 }
-.brands-img img{
+
+.brands-img img {
     width: 500px;
     max-width: 100%;
 }
-.customers-carrusel{
+
+.customers-carrusel {
     flex: 1;
     background-color: #fff;
     border-radius: 10px;
 }
-.customer{
+
+.customer {
     position: relative;
 }
-.customer img{
+
+.customer img {
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-.customer-logo{
+
+.customer-logo {
     position: absolute;
     bottom: -30px;
     right: 20px;
@@ -191,22 +298,26 @@ main{
     justify-content: center;
     align-items: center;
 }
-.customer-logo img{
+
+.customer-logo img {
     max-width: 75%;
 }
-.card{
+
+.card {
     display: flex;
     flex-direction: column;
     padding: 25px;
 }
-.card h3{
+
+.card h3 {
     color: #212529e1;
     font-family: "Open Sans", sans-serif;
     font-size: 25px;
     font-weight: 400;
-    line-height: 30px;  
+    line-height: 30px;
 }
-.card h4{
+
+.card h4 {
     font-family: 'Slabo 27px', serif;
     color: #025157;
     font-size: 18px;
@@ -214,21 +325,102 @@ main{
     line-height: 20px;
     margin-bottom: 12px;
 }
-.extra-income{
+
+.extra-income {
     display: flex;
     align-items: center;
     color: #8b8b8bcc;
     padding-bottom: 25px;
 }
-.extra-income img{
+
+.extra-income img {
     width: 26px;
     margin: 0px 20px;
 }
-.btn-container{
+
+.btn-container {
     margin-bottom: 17px;
     padding: 25px;
 }
-.btn-card{
+
+.btn-card {
     width: 100%;
 }
 
+/* ============= Matcha Services ================== */
+.matcha-services {
+    padding: 5% 10%;
+    text-align: center;
+}
+
+.matcha-services h2 {
+    font-size: 50px;
+    margin-bottom: 8px;
+}
+
+.service-p{
+    color: #46484c;
+    max-width: 60%;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+.matcha-services a{
+    color: #67b54b;
+}
+.btn-services{
+    font-size: 14px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.services{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.service-card{
+    background-color: white;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.service-img{
+    position: relative;
+    height: 350px;
+
+}
+.service-img{
+    width: 100%;
+}
+.service-icon{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 21px;
+}
+.service-body{
+    padding: 25px;
+}
+.service-body h3{
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 8px;
+}
+.service-body p{
+    font-size: 15px;
+    height: 85px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    margin-top: 15px;
+    color: #46484c;
+    text-align: left;
+}
+.service-body a{
+    display: block;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: left;
+    padding-top: 20px;
+}
