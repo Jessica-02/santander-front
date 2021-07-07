@@ -1,0 +1,22 @@
+{
+  "name": "santanderfront",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jessica-02/santander-front.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jessica-02/santander-front/issues"
+  },
+  "homepage": "https://github.com/Jessica-02/santander-front#readme",
+  "dependencies": {
+    "sas": "^3.0.4"
+  }
+}
